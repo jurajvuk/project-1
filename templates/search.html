@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Books: Project 1</h1>
+    {% if titles %}
+        {% for title in titles %}
+            <p>{{title.title}}</p>
+        {% endfor %}
+    {% else %}
+        <p>There is no such author</p>
+    {% endif %}
+{% endblock %}

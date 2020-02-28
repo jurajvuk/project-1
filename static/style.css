@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+.main-header {
+    height: 10vh;
+    background: #F4F1EA;
+    display: flex;
+    align-items: center;
+}
+
+.main-header h1 {
+    flex: 3 1 30rem;
+    margin-left: 2rem;
+}
+
+.main-header ul {
+    flex: 1 1 30rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.main-header a {
+    color: black;
+    font-size: 2rem;
+}
+
+.content {
+    height: 90vh;
+    background: linear-gradient(rgb(0, 0, 0, 0.5), transparent), url('/static/img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    background: rgba(19, 28, 39, 0.8);
+    width: 80%;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.form-wrapper h1 {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.form-wrapper input {
+    padding: 1rem 3rem;
+    margin: 1rem;
+}
+
+.form-wrapper button {
+    padding: 1rem 2rem;
+    margin: 2rem;
+}
+
+.result {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.result li {
+    width: 3rem;
+}

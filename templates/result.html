@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <h1>Books: Project 1</h1>
+    <div class="form-wrapper">
+        <h1>Books</h1>
+        <ul class="result">
+            {% for book in books %}
+                {% set imageLinkNew = imageLink + book.isbn + "-S.jpg" %}    
+                <li><img src="{{ imageLinkNew }}" alt=""><p>{{book.title}}</p></li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
